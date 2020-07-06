@@ -14,4 +14,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.student.first_name, 'Bill')
         self.assertEqual(self.student.major, 'Business')
 
-    
+    def test_object_created_all_attributes(self):
+        self.assertEqual(self.student.last_name, 'Johnson')
+        self.assertEqual(self.student.first_name, 'Bill')
+        self.assertEqual(self.student.major, 'Business')
+        self.assertEqual(self.student.gpa, 3.5)
