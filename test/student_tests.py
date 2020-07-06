@@ -25,4 +25,4 @@ class MyTestCase(unittest.TestCase):
 
     def test_object_not_created_error_last_name(self):
         with self.assertRaises(ValueError):
-            s = a.Student(123, 'Bill', 'Business')
+            s = a.Student('123', 'Bill', 'Business')
