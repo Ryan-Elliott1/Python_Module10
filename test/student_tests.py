@@ -34,3 +34,8 @@ class MyTestCase(unittest.TestCase):
     def test_object_not_created_error_major(self):
         with self.assertRaises(ValueError):
             s = a.Student('Johnson', 'Bill', '123')
+
+    def test_person_class_display_name_ssn(self):
+        with self.assertRaises(ValueError):
+            s = a.Student('Johnson', 'Bill', 'Business', '3.5')
+
